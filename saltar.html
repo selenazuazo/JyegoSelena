@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salto del Div al Hacer Clic</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 1000vh;
+      background-color: rgb(253, 155, 240);
+    }
+    .circulo {
+      width: 200px;
+      height: 80px;
+      background-color: blueviolet;
+      position: absolute;
+      top: 50%; 
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: transform 0.3s ease-in-out; 
+    }
+    .salto {
+      transform: translate(-50%, -150%) scale(1.2); 
+    }
+  </style>
+</head>
+<body>
+  <div class="circulo" id="circulo"></div>
+
+  <script>
+    const circulo = document.getElementById('circulo'); 
+    
+    function saltarCirculo() {
+      
+      circulo.classList.add('salto');
+
+     
+      setTimeout(() => {
+        circulo.classList.remove('salto');
+      }, 300); 
+    }
+
+    
+    document.body.addEventListener('click', saltarCirculo);
+  </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh; 
+  }
+
+  .left {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-row {
+    display: flex;
+    height: 50%; 
+  }
+
+  .dato1, .dato11 {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .dato1 {
+    background-color: #c533ff; 
+  }
+
+  .dato11 {
+    background-color: #e266d8; 
+  }
+
+  .dato2, .dato3 {
+    height: 38%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .dato2 {
+    background-color: #6cc3e6; 
+  }
+
+  .dato3 {
+    background-color: #e1f00f; 
+  }
+
+  .right {
+    width: 50%; 
+    background-color: #f5632a; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+  }
